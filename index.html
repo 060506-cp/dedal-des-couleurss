@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dedal des Couleurs — galerie d'art expressionniste">
+  <title>Dedal des Couleurs | Galerie</title>
+  <link rel="stylesheet" href="galerie.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Dedal des Couleurs, accueil">
+      <img class="logo-img" src="image galerie/logo.jpg" alt="Logo Dedal des Couleurs">
+      <span class="brand-name">DEDAL <small>DES COULEURS</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#galerie">La galerie</a>
+      <a href="#oeuvres">Œuvres</a>
+      <a class="button button-small" href="#contact">Inscription</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-placeholder image-placeholder">
+        <img src="image galerie/hero.jpg" alt="">
+      </div>
+      <h1>L’art de ressentir autrement</h1>
+    </section>
+
+    <section class="section collection" id="galerie">
+      <div class="section-heading"><h2>Notre collection</h2></div>
+      <div class="featured-grid">
+        <article class="art-card">
+          <div class="image-placeholder artwork-placeholder"><img src="image galerie/soutine.jpg" alt="Œuvre de Chaïme Soutine"></div>
+          <h3>Chaïme Soutine</h3><p>Œuvres expressionnistes<br>1934</p>
+        </article>
+        <article class="art-card">
+          <div class="image-placeholder artwork-placeholder"><img src="image galerie/kirchner.jpg" alt="Paysage de montagne d’Ernst Ludwig Kirchner"></div>
+          <h3>Ernst Ludwig Kirchner</h3><p>Paysage de montagne<br>1910</p>
+        </article>
+        <article class="art-card">
+          <div class="image-placeholder artwork-placeholder"><img src="image galerie/modigliani.jpg" alt="Portrait de femme d’Amedeo Modigliani"></div>
+          <h3>Amedeo Modigliani</h3><p>Portrait de femme<br>1919</p>
+        </article>
+      </div>
+      <a class="button" href="#oeuvres">Voir toutes les œuvres</a>
+    </section>
+
+    <section class="section about">
+      <div class="image-placeholder about-placeholder"><img src="image galerie/galerie.jpg" alt="Vue de la galerie Dedal des Couleurs"></div>
+      <div class="about-copy">
+        <p class="eyebrow">À propos de la galerie</p>
+        <h2>Une galerie passionnée par l’art</h2>
+        <p>Depuis plus de 30 ans, Monsieur Paul Dechewsky partage sa passion pour la peinture à travers une sélection d’œuvres expressionnistes.</p>
+        <p>La galerie Dedal des Couleurs vous invite à découvrir des artistes et des œuvres où les couleurs et les émotions occupent une place essentielle.</p>
+        <a class="button" href="#contact">En savoir plus sur la galerie →</a>
+      </div>
+    </section>
+
+    <section class="section catalog" id="oeuvres">
+      <div class="section-heading"><h2>Notre catalogue d’œuvres</h2></div>
+      <p class="catalog-intro">Explorez notre collection d’œuvres expressionnistes.</p>
+      <div class="filters" aria-label="Filtres du catalogue">
+        <label><span class="sr-only">Artiste</span><select><option>Artiste</option></select></label>
+        <label><span class="sr-only">Période</span><select><option>Période</option></select></label>
+        <label><span class="sr-only">Technique</span><select><option>Technique</option></select></label>
+        <label><span class="sr-only">Prix</span><select><option>Prix</option></select></label>
+      </div>
+      <div class="catalog-grid">
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/pascin.jpg" alt="Young woman, œuvre de Jules Pascin"></div><h3>Young woman</h3><p>Jules Pascin, 1925</p><p class="price">700€</p></article>
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/chagall.jpg" alt="La promenade, œuvre de Marc Chagall"></div><h3>La promenade</h3><p>Marc Chagall, 1917</p><p class="price">10 000€</p></article>
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/picasso.jpg" alt="La femme qui pleure, œuvre de Pablo Picasso"></div><h3>La femme qui pleure</h3><p>Pablo Picasso, 1937</p><p class="price">Prix sur demande</p></article>
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/nolde.jpg" alt="Palmiers au bord de la mer, œuvre d’Emil Nolde"></div><h3>Palmiers au bord de la mer</h3><p>Emil Nolde, 1914</p><p class="price">Prix sur demande</p></article>
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/munch.jpg" alt="The scream, œuvre d’Edvard Munch"></div><h3>The scream</h3><p>Edvard Munch, 1893</p><p class="price">Prix sur demande</p></article>
+        <article class="art-card catalog-card"><div class="image-placeholder catalog-image"><img src="image galerie/muenter.jpg" alt="Le soir, œuvre de Gabriele Münter"></div><h3>Le soir</h3><p>Gabriele Münter, 1909</p><p class="price">9 586€</p></article>
+      </div>
+      <nav class="pagination" aria-label="Pagination du catalogue"><a class="current" href="#oeuvres" aria-current="page">1</a><a href="#oeuvres">2</a><a href="#oeuvres">3</a><a href="#oeuvres" aria-label="Page suivante">…</a></nav>
+    </section>
+
+    <section class="contact-cta" id="contact">
+      <h2>Avez-vous une question ou des questions ?</h2>
+      <a class="button" href="mailto:dedal@gmail.com">Nous contacter →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>Contactez-nous</h2>
+      <p>Nom de l’entreprise : DEDAL DES COULEURS<br>Adresse : 10 rue de la République, 75000 Paris</p>
+      <p>Tél : 01.63.45.85.56<br>Fax : 01.63.45.78.52</p>
+      <p>Email : <a href="mailto:dedal@gmail.com">dedal@gmail.com</a><br>Personne à contacter : Paul DECHEWSKY</p>
+    </div>
+    <div class="social">
+      <span>Suivez-nous sur :</span>
+      <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="image galerie/instagram.jpg" alt="Instagram">
+      </a>
+      <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+        <img src="image galerie/youtube.jpg" alt="YouTube">
+      </a>
+      <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+        <img src="image galerie/facebook.jpg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
